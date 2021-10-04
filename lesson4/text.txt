@@ -1,0 +1,50 @@
+// ДОБАВЛЕНИЕ ДАННЫХ INSERT
+db.yo_cities.insertOne({name: 'Сыктывкар'})
+db.yo_cities.insertMany([{name: 'Изобильное'}, {name: 'Сочи'}])
+
+// УДАЛЕНИЕ ДАННЫХ DELETE
+db.yo_cities.deleteOne({name: 'Сыктывкар'})
+db.yo_cities.deleteMany({name: {$in: ['Изобильное', 'Сочи']}})
+
+// ВЫВОД ДАННЫХ FIND
+db.yo_users.find({$or: [{age: 82}, {name: "Иван"}]})
+db.yo_users.find({age: {$gte: 18, $lte: 40}})
+db.yo_users.find({name: {$ne: "Андрей"}})
+db.yo_users.find({rating: {$in: [7.6, 3.2, 6.3]}})
+
+// ИЗМЕНЕНИЕ ДАННЫХ UPDATE
+db.yo_cities.updateOne({name: 'Сыктывкар'}, {$set: {name : 'Саратов'}})
+db.yo_users.updateOne({name: 'Андрей'}, {$inc: {rating: 0.1}});
+db.yo_users.updateMany({age: {$gt: 35}}, {$set: {status: 'old'}});
+
+
+db.yo_product.explain().aggregate([
+    { $lookup: {
+        from: "yo_cities",
+        localField: "city_id",
+        foreignField: "_id",
+        as: "city_id"
+    }},
+    { $lookup: {
+        from: "yo_categories",
+        localField: "category_id",
+        foreignField: "_id",
+        as: "category_id"
+    }},
+    { $lookup: {
+        from: "yo_types",
+        localField: "type_id",
+        foreignField: "_id",
+        as: "type_id"
+    }},
+    { $lookup: {
+        from: "yo_users",
+        localField: "user_id",
+        foreignField: "_id",
+        as: "user_id"
+    }},
+    {
+        $project: {
+            _id: 0
+    }}
+    ])
