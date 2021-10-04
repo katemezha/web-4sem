@@ -1,0 +1,21 @@
+<?php //%255BApp%255CCore%255CCommon%255CDocument%255CAbstractDocument%2524updatedAt%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Gedmo\\Mapping\\Annotation\\Timestampable'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Gedmo\\Mapping\\Annotation\\Timestampable')),
+        clone ($p['Doctrine\\ODM\\MongoDB\\Mapping\\Annotations\\Field'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ODM\\MongoDB\\Mapping\\Annotations\\Field')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'type' => [
+                1 => 'date',
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+    ],
+    []
+); }];

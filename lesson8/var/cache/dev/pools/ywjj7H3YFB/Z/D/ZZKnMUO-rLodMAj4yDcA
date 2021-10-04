@@ -1,0 +1,30 @@
+<?php //%255BApp%255CApi%255CUser%255CDto%255CUserCreateRequestDto%2524roles%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Symfony\\Component\\Validator\\Constraints\\Choice'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Validator\\Constraints\\Choice')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'callback' => [
+                [
+                    'App\\Core\\User\\Enum\\Role',
+                    'getValues',
+                ],
+            ],
+            'multiple' => [
+                true,
+            ],
+            'groups' => [
+                [
+                    'Default',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+    ],
+    []
+); }];

@@ -1,0 +1,71 @@
+2021/06/20 13:32:55 [notice] 1#1: using the "epoll" event method
+2021/06/20 13:32:55 [notice] 1#1: nginx/1.21.0
+2021/06/20 13:32:55 [notice] 1#1: built by gcc 10.2.1 20201203 (Alpine 10.2.1_pre1) 
+2021/06/20 13:32:55 [notice] 1#1: OS: Linux 5.4.72-microsoft-standard-WSL2
+2021/06/20 13:32:55 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2021/06/20 13:32:55 [notice] 1#1: start worker processes
+2021/06/20 13:32:55 [notice] 1#1: start worker process 41
+2021/06/20 13:32:55 [notice] 1#1: start worker process 42
+2021/06/20 13:32:55 [notice] 1#1: start worker process 43
+2021/06/20 13:32:55 [notice] 1#1: start worker process 44
+2021/06/20 13:32:55 [notice] 1#1: start worker process 45
+2021/06/20 13:32:55 [notice] 1#1: start worker process 46
+2021/06/20 13:32:55 [notice] 1#1: start worker process 47
+2021/06/20 13:32:55 [notice] 1#1: start worker process 48
+2021/06/20 13:37:01 [error] 41#41: *3 open() "/usr/share/nginx/html/api/v1/users" failed (2: No such file or directory), client: 172.31.0.1, server: localhost, request: "GET /api/v1/users HTTP/1.1", host: "localhost:8081"
+2021/06/21 08:39:21 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2021/06/21 08:39:21 [notice] 41#41: gracefully shutting down
+2021/06/21 08:39:21 [notice] 42#42: gracefully shutting down
+2021/06/21 08:39:21 [notice] 45#45: gracefully shutting down
+2021/06/21 08:39:21 [notice] 43#43: gracefully shutting down
+2021/06/21 08:39:21 [notice] 47#47: gracefully shutting down
+2021/06/21 08:39:21 [notice] 43#43: exiting
+2021/06/21 08:39:21 [notice] 47#47: exiting
+2021/06/21 08:39:21 [notice] 45#45: exiting
+2021/06/21 08:39:21 [notice] 46#46: gracefully shutting down
+2021/06/21 08:39:21 [notice] 48#48: gracefully shutting down
+2021/06/21 08:39:21 [notice] 41#41: exiting
+2021/06/21 08:39:21 [notice] 44#44: gracefully shutting down
+2021/06/21 08:39:21 [notice] 42#42: exiting
+2021/06/21 08:39:21 [notice] 48#48: exiting
+2021/06/21 08:39:21 [notice] 42#42: exit
+2021/06/21 08:39:21 [notice] 46#46: exiting
+2021/06/21 08:39:21 [notice] 43#43: exit
+2021/06/21 08:39:21 [notice] 45#45: exit
+2021/06/21 08:39:21 [notice] 48#48: exit
+2021/06/21 08:39:21 [notice] 41#41: exit
+2021/06/21 08:39:21 [notice] 46#46: exit
+2021/06/21 08:39:21 [notice] 44#44: exiting
+2021/06/21 08:39:21 [notice] 44#44: exit
+2021/06/21 08:39:21 [notice] 47#47: exit
+2021/06/21 08:39:22 [notice] 1#1: signal 17 (SIGCHLD) received from 47
+2021/06/21 08:39:22 [notice] 1#1: worker process 45 exited with code 0
+2021/06/21 08:39:22 [notice] 1#1: worker process 47 exited with code 0
+2021/06/21 08:39:22 [notice] 1#1: signal 29 (SIGIO) received
+2021/06/21 08:39:22 [notice] 1#1: signal 17 (SIGCHLD) received from 44
+2021/06/21 08:39:22 [notice] 1#1: worker process 44 exited with code 0
+2021/06/21 08:39:22 [notice] 1#1: worker process 46 exited with code 0
+2021/06/21 08:39:22 [notice] 1#1: worker process 48 exited with code 0
+2021/06/21 08:39:22 [notice] 1#1: signal 29 (SIGIO) received
+2021/06/21 08:39:22 [notice] 1#1: signal 17 (SIGCHLD) received from 46
+2021/06/21 08:39:22 [notice] 1#1: signal 17 (SIGCHLD) received from 41
+2021/06/21 08:39:22 [notice] 1#1: worker process 41 exited with code 0
+2021/06/21 08:39:22 [notice] 1#1: signal 29 (SIGIO) received
+2021/06/21 08:39:22 [notice] 1#1: signal 17 (SIGCHLD) received from 43
+2021/06/21 08:39:22 [notice] 1#1: worker process 42 exited with code 0
+2021/06/21 08:39:22 [notice] 1#1: worker process 43 exited with code 0
+2021/06/21 08:39:22 [notice] 1#1: exit
+2021/06/24 08:40:29 [notice] 1#1: using the "epoll" event method
+2021/06/24 08:40:29 [notice] 1#1: nginx/1.21.0
+2021/06/24 08:40:29 [notice] 1#1: built by gcc 10.2.1 20201203 (Alpine 10.2.1_pre1) 
+2021/06/24 08:40:29 [notice] 1#1: OS: Linux 5.4.72-microsoft-standard-WSL2
+2021/06/24 08:40:29 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2021/06/24 08:40:29 [notice] 1#1: start worker processes
+2021/06/24 08:40:29 [notice] 1#1: start worker process 41
+2021/06/24 08:40:29 [notice] 1#1: start worker process 42
+2021/06/24 08:40:29 [notice] 1#1: start worker process 43
+2021/06/24 08:40:29 [notice] 1#1: start worker process 44
+2021/06/24 08:40:29 [notice] 1#1: start worker process 45
+2021/06/24 08:40:29 [notice] 1#1: start worker process 46
+2021/06/24 08:40:29 [notice] 1#1: start worker process 47
+2021/06/24 08:40:29 [notice] 1#1: start worker process 48
